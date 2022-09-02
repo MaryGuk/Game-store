@@ -1,4 +1,10 @@
 .game-buy__price {
   margin-right: 5px;
+  display: inline-block;
 }
 
+.game-buy__button {
+  margin-right: 5px;
+  padding-bottom: 20px;
+  display: inline-block;
+}

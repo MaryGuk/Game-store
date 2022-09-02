@@ -32,7 +32,8 @@
 }
 
 .game-item__buy {
-  position: relative;
+  
+  position: absolute;
   margin-left: 5px;
   right: 0;
   bottom: -12px;
