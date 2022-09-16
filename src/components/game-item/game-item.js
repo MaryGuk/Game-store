@@ -12,13 +12,14 @@ export const GameItem = ({ game }) => {
 
   const handleClick = () => {
     dispatch(setCurrentGame(game));
-    navigate.push(`/app/${game.title}`);
+    navigate(`/app/${game.title}`);
   };
+
   return (
     <div className="game-item" onClick={handleClick}>
       <GameCover image={game.image} />
       <div className="game-item__details">
-        <span className="game-item__title"> {game.title}</span>
+        <span className="game-item__title">{game.title}</span>
         <div className="game-item__genre">
           {game.genres.map((genre) => (
             <GameGenre genre={genre} key={genre} />

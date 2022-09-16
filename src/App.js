@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HomePage } from "./pages/home-page";
 import { Header } from "./components/header";
+import { HomePage } from "./pages/home-page";
+import { GamePage } from "./pages/game-page";
 import { Provider } from "react-redux";
 import { store } from "./redux";
-
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <div className="App">
           <Header />
           <Routes>
+            <Route path="/app/:title" element={<GamePage />} />
             <Route path="/" element={<HomePage />} />
           </Routes>
         </div>
